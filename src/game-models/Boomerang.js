@@ -4,17 +4,16 @@
 
 class Boomerang {
   constructor() {
-    this.skin = "👹";
-    this.position = 3;
+    this.skin = "🔪🔪🔪";
+    this.position = 15;
   }
 
   fly() {
     this.moveRight();
     setTimeout(() => {
       this.moveLeft();
-    });
-
-    fly()
+    }, 0);
+    
   }
 
   moveLeft() {
