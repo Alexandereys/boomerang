@@ -1,13 +1,15 @@
+const Boomerang = require('./Boomerang');
 // Враг.
 
 class Enemy {
-  constructor() {
+  constructor(position) {
     this.generateSkin();
-    this.position = 2;
+    // this.skin = skin;
+    this.position = 70;
   }
 
   generateSkin() {
-    const skins = ['👾', '💀', '👹', '👻', '👽', '👿', '💩', '🤡', '🤺', '🧛', '🧟', '🎃'];
+    const skins = ['Who am i????'];
     this.skin = skins[Math.floor(Math.random() * skins.length)];
   }
 
@@ -17,8 +19,9 @@ class Enemy {
   }
 
   die() {
-    this.position = '?';
-    console.log('Enemy is dead!');
+    this.skin = 'RUS';
+    console.log('Я ЕСТЬ ЭЛЬБРУС');
+    // process.exit();
   }
 }
 
