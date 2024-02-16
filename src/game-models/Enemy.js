@@ -5,11 +5,11 @@ class Enemy {
   constructor(position) {
     this.generateSkin();
     // this.skin = skin;
-    this.position = 70;
+    this.position = 30;
   }
 
   generateSkin() {
-    const skins = ['Who am i????'];
+    const skins = ['YASHER'];
     this.skin = skins[Math.floor(Math.random() * skins.length)];
   }
 

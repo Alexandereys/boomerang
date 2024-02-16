@@ -51,6 +51,7 @@ class Game {
       this.view.render(this.track);
       this.enemy.moveLeft();
       this.boomerang.moveRight();
+      // this.boomerang.moveLeft();
       this.checkBoomerang();
     }, 100);
   }
